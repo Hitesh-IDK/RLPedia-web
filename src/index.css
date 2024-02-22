@@ -23,9 +23,71 @@ body {
 
   background-color: var(--background-color);
   color: var(--text-color);
+  overflow-x:hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+
+.Banner-text{
+ color:white;
+ font-size:4rem;
+ line-height: 1em;
+}
+
+.left-side{
+  padding:160px;
+  padding-bottom:10px;
+  padding-right:0px;
+}
+
+.head-text{
+  color:var(--accent-color);
+}
+
+
+.getBtn{
+    background-color: var(--primary-color);
+    padding:10px 100px ;
+    font-size: large;
+    font-weight: bold;
+}
+
+.icon-container{
+  justify-content: center;
+  align-items: center;
+  padding: 100px 160px;
+  gap:5;
+}
+
+.icon-box{
+  border-right:1px solid#9b8ae6;
+  padding:3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.icon-box img{
+height: 8rem;
+width: 8rem;
+
+}
+
+.text{
+  text-align: center;
+  font-size: 17px;
+}
+
+.icon-box:hover{
+ transform: translateY(-8px);
+}
+
+
