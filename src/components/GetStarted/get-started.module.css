@@ -1,0 +1,8 @@
+.main__container {
+  display: grid;
+
+  grid-template-columns: 900px;
+  justify-content: center;
+
+  margin-top: 4rem;
+}

@@ -1,0 +1,14 @@
+.bar {
+  width: 100%;
+  background-color: aqua;
+  position: relative;
+
+  color: transparent;
+}
+
+.filled_bar {
+  position: absolute;
+  top: 0;
+
+  color: transparent;
+}
