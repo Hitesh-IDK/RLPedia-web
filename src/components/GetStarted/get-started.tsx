@@ -5,13 +5,15 @@ import StartedOption from "./started-option";
 import AboutUser from "./sections/about-user";
 import InterestUser from "./sections/interest-user";
 import { useState } from "react";
+import Midpoint from "./sections/midpoint";
 
 export default function (): JSX.Element {
-  const [clickCounter, setClickCounter] = useState(0);
+  const [clickCounter, setClickCounter] = useState(2);
 
   const numberOfSlides = [
     <AboutUser setClickCounter={setClickCounter} />,
     <InterestUser setClickCounter={setClickCounter} />,
+    <Midpoint setClickCounter={setClickCounter} />,
   ];
 
   return (
