@@ -15,19 +15,3 @@
   grid-template-columns: 80%;
   justify-content: center;
 }
-
-.main__title {
-  font-size: 2rem;
-  font-weight: 600;
-  letter-spacing: 1px;
-
-  text-align: center;
-}
-
-.title__desc {
-  margin-top: 1rem;
-  text-align: center;
-
-  font-style: italic;
-  font-size: 1.05rem;
-}
