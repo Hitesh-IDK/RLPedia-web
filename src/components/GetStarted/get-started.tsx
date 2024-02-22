@@ -9,7 +9,7 @@ import Midpoint from "./sections/midpoint";
 import LoginUser from "./sections/login-user";
 
 export default function (): JSX.Element {
-  const [clickCounter, setClickCounter] = useState(3);
+  const [clickCounter, setClickCounter] = useState(0);
 
   const numberOfSlides = [
     <AboutUser setClickCounter={setClickCounter} />,
@@ -20,7 +20,7 @@ export default function (): JSX.Element {
 
   return (
     <>
-      <div className={styles.main__container}>
+      <div className={styles.main__container} id="started">
         <ProgressBar value={clickCounter} maxValue={numberOfSlides.length} />
 
         <div className={styles.sub__container}>

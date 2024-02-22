@@ -1,0 +1,50 @@
+.main__container {
+  height: 100vh;
+  background-image: url(../../public/images/smooth-elegant-transparent-blue-cloth-separated-blue-wall.jpg);
+  backdrop-filter: 2;
+  background-size: cover;
+
+  padding-top: 5rem;
+}
+
+.quiz__container {
+  display: grid;
+
+  grid-template-columns: 900px;
+  justify-content: center;
+}
+
+.question {
+  width: 100%;
+  height: 15rem;
+
+  padding: 0 2rem;
+  text-align: center;
+
+  background-color: #5d376f45;
+  font-size: 1.7rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 20px;
+  border: 2px solid var(--primary-color);
+  box-shadow: 0 10px 20px #9b8ae663;
+}
+
+.options__container {
+  display: grid;
+  width: 100%;
+
+  grid-template-columns: 1fr 1fr;
+
+  padding: 0 4rem;
+  justify-content: center;
+
+  row-gap: 1rem;
+  column-gap: 1rem;
+  text-align: center;
+
+  margin-top: 3rem;
+}

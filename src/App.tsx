@@ -1,13 +1,19 @@
-import Login from "./components/login"
+import Login from "./components/login";
 import "./App.css";
-import Banner from "./components/Banner";
-import GetStarted from "./components/GetStarted/get-started";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/home";
+import GetStarted from "./pages/getStarted";
+import TestPage from "./pages/testPage";
 
 function App() {
   return (
-    <div>
-      <Login/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Home />}></Route>
+        <Route path="start" element={<GetStarted />} />
+        <Route path="test" element={<TestPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
