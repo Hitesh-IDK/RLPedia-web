@@ -1,8 +1,17 @@
 .main__container {
   display: grid;
 
-  grid-template-columns: 900px;
+  grid-template-columns: 1200px;
   justify-content: center;
 
   margin-top: 4rem;
+}
+
+.sub__container {
+  margin-top: 2.8rem;
+
+  display: grid;
+
+  grid-template-columns: 80%;
+  justify-content: center;
 }

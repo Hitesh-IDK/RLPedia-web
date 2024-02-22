@@ -1,6 +1,9 @@
 .bar {
   width: 100%;
-  background-color: aqua;
+  height: 4px;
+
+  background-color: rgb(194, 194, 194);
+  border-radius: 5px;
   position: relative;
 
   color: transparent;
@@ -9,6 +12,12 @@
 .filled_bar {
   position: absolute;
   top: 0;
+
+  height: inherit;
+
+  background-color: var(--accent-color);
+
+  transition: width 1s ease-in-out;
 
   color: transparent;
 }
