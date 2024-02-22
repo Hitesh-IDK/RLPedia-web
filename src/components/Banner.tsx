@@ -2,6 +2,7 @@ import science from "../public/icons/science.gif";
 import code from "../public/icons/coding.gif";
 import data from "../public/icons/Data analysis .gif";
 import logic from "../public/icons/Logic.gif";
+import { Link } from "react-router-dom";
 export default function () {
   return (
     <>
@@ -15,9 +16,9 @@ export default function () {
             Build powerful critical thinking skills with interactive lessons in{" "}
             <b>math, data analysis, programming,</b> and <b>AI.</b>
           </p>
-          <a className="getBtn btn mt-5" href="#started">
+          <Link className="getBtn btn mt-5" to={"/start"}>
             Get Started
-          </a>
+          </Link>
         </div>
         <div className="col-6 "></div>
       </div>
