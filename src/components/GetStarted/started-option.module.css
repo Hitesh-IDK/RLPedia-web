@@ -20,6 +20,7 @@
   border: 2px solid var(--primary-color);
 
   box-shadow: 0 8px 20px var(--primary-transparent-color);
+  transform: translateY(-0.2rem);
 }
 
 .img__icon {

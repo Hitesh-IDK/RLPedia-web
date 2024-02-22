@@ -13,40 +13,36 @@ export default function ({
 }): JSX.Element {
   return (
     <>
-      <div className={styles.main__title}>Which describes you best</div>
+      <div className={styles.main__title}>
+        Which are you most interested in?
+      </div>
       <div className={styles.title__desc}>
         This will help us personalize your experience.
       </div>
 
       <div className={styles.options__container}>
         <StartedOption
-          content="Student or Soon to be enrolled"
+          content="Learning Specific Skills to advance my Career"
           icon={studentIcon}
           clickHandler={() => {
             setClickCounter((prevCount) => prevCount + 1);
           }}
         />
         <StartedOption
-          content="Professional Pursuing a Career"
+          content="Explore new topics"
           icon={professionIcon}
           clickHandler={() => {
             setClickCounter((prevCount) => prevCount + 1);
           }}
         />
         <StartedOption
-          content="Parent of a School aged child"
+          content="Exercising my brain to stay sharp"
           icon={parentIcon}
           clickHandler={() => {
             setClickCounter((prevCount) => prevCount + 1);
           }}
         />
-        <StartedOption
-          content="Professor or Teacher"
-          icon={teacherIcon}
-          clickHandler={() => {
-            setClickCounter((prevCount) => prevCount + 1);
-          }}
-        />
+        {/* <StartedOption content="Professor or Teacher" icon={teacherIcon} /> */}
       </div>
     </>
   );
