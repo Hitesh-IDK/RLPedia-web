@@ -314,10 +314,12 @@ font-weight: 800;
 @media screen and (max-width:400px)  { 
 
   .left-side {
-    padding: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-bottom: 10px;
-    padding-right: 70px;
     height:100%;
+    width: 100% !important;
+    justify-content: center;
   }
    
 
@@ -325,11 +327,27 @@ font-weight: 800;
     display:none;
   }
 
+
+  .icon-container{
+    padding: 100px 132px;
+  }
   .icon-box{
     border:0;
     overflow: visible;
     border-bottom: 1px solid #9b8ae6 !important;
+
   }
+
+  .stage .card {
+  
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.stage-container {
+  margin-left: 12px;
+}
 
  
 }
