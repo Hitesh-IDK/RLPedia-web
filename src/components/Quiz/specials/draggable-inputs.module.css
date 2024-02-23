@@ -1,0 +1,8 @@
+.draggable__content {
+  background-color: rgb(93, 93, 93);
+  padding: 1rem;
+  border-radius: 50px;
+  text-align: center;
+
+  cursor: pointer;
+}
