@@ -23,12 +23,32 @@ body {
 
   background-color: var(--background-color);
   color: var(--text-color);
-  overflow-x: hidden;
+
+  overflow-x:hidden;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.Banner-container{
+  height: 100vh;
+
+}
+
+
+.Banner-text{
+ color:white;
+ font-size:4rem;
+ line-height: 1em;
+}
+
+.left-side{
+  padding:160px;
+  padding-bottom:10px;
+  padding-right:70px;
 }
 
 .Banner-text {
@@ -57,8 +77,11 @@ code {
 .icon-container {
   justify-content: center;
   align-items: center;
+margin-bottom: 50px;
+margin-top: -10px;
+  gap:5;
   padding: 100px 160px;
-  gap: 5;
+
 }
 
 .icon-box {
@@ -85,4 +108,228 @@ code {
 
 .icon-box:hover {
   transform: translateY(-8px);
+}
+
+
+.login-container{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./public/images/loginbg.jpg);
+}
+
+
+
+.wrapper{
+  width:420px;
+  background: transparent;
+  border: 2px solid rgba(255,255,255,.2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+
+.wrapper h1{
+  font-size: 36px;
+  text-align: center;
+}
+
+.wrapper .input-box{
+  width: 100%;
+  height: 50px;
+ 
+  margin: 30px 0;
+  position: relative;
+}
+
+.input-box input{
+  width: 100%;
+  height: 100%;
+  background:transparent;
+  border: none;
+  outline: none;
+  border:2px solid rgba(225,255,255,.2) ;
+  border-radius:40px;
+  padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+  color:#fff;
+}
+
+.input-box i{
+ position: absolute;
+ right:20px;
+ top: 50%;
+ transform: translateY(-50%);
+ font-size: 20px;
+ color: #060412;
+}
+
+ .wrapper .remember-forgot{
+  display: flex;;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin:-15px 0 15px;
+ }
+
+ .remember-forgot a{
+  color: #fff;
+ }
+
+ .remember-forgot a:hover{
+  text-decoration: underline;
+ }
+
+ .wrapper .btn{
+  width:100%;
+  height: 45px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  border-radius:40px;
+  box-shadow: 0 0 10px rgba(0,0 ,0,0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+ }
+
+ .wrapper .register-link{
+  font-size:14.5px;
+  text-align:center;
+  margin-top: 20px 0 15px;
+ }
+
+.register-link p a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link p a:hover{
+  text-decoration: underline;
+}
+
+
+.login-form {
+  transform: perspective(800px) rotateY(0deg);
+}
+
+.signup-form {
+  transform: perspective(800px) rotateY(180deg);
+}
+
+.navbar{
+ background-color: transparent;
+ color:var(--primary-color);
+ padding: 26px;
+ padding-left:100px;
+}
+
+
+.navbar a{
+  color: #9b8ae6;
+
+}
+
+.navbar-toggler-icon{
+font-weight: 800;
+}
+
+.login{
+    background: transparent;
+    border:1px solid #9b8ae6;
+    color: #9b8ae6;
+    padding:10px 20px;
+    border-radius:10px;
+}
+
+.login:hover{
+  background:#9b8ae6;
+  border:1px solid #060412;
+  color:#060412;
+}
+
+.stagecards{
+   display: flex;
+   align-items:center;
+   border-radius: 10px;
+   flex-direction: column;
+    padding:50px;
+    width:350px;
+    height:250px;
+    border: 1px solid rgba(243, 243, 243, 0.2);
+   border-radius: 10px;
+   color:rgba(243, 243, 243, 0.2) ;
+   
+}
+
+.card-active{
+  border:1px solid #9b8ae6;
+  box-shadow:rgba(50, 50, 93, 5.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+   color: white !important;
+}
+
+.stagecards h2{
+  font-weight: 700;
+  font-size:23px;
+}
+
+.stagecards p,h2{
+  text-align: center;
+}
+
+.stage-container{
+  margin-left:275px;
+
+}
+
+.icon{
+   height:300px;
+   width:300px;
+}
+
+.stage .card{
+  background-color: #060412;
+  margin-left:275px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.card p{
+  font-size: 14px;
+  color: white;
+}
+
+.card h3{
+  color: white;
+}
+
+@media screen and (max-width:400px)  { 
+
+  .left-side {
+    padding: 50px;
+    padding-bottom: 10px;
+    padding-right: 70px;
+    height:100%;
+  }
+   
+
+  .right-side{
+    display:none;
+  }
+
+  .icon-box{
+    border:0;
+    overflow: visible;
+    border-bottom: 1px solid #9b8ae6 !important;
+  }
+
+ 
 }

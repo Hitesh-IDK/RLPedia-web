@@ -1,5 +1,4 @@
-.main__container {
-  display: grid;
+.main__container{
 
   margin-left: 20rem;
   margin-top: 5rem;
@@ -11,8 +10,7 @@
 }
 
 .details__section {
-  display: grid;
-  grid-template-columns: auto;
+ 
 }
 
 .domain__name {
