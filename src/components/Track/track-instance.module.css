@@ -13,6 +13,7 @@
   padding: 2rem 2rem;
 
   max-height: 26rem;
+  border-radius: 12px;
 }
 
 .img__course {
@@ -64,6 +65,7 @@
   align-items: center;
 
   justify-content: center;
+  cursor: pointer;
 }
 
 .section__container:nth-child(even) {
