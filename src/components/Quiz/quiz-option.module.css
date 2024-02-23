@@ -1,0 +1,21 @@
+.option__container {
+  padding: 1rem;
+  background-color: rgba(149, 96, 160, 0.288);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  letter-spacing: 1px;
+
+  border: 2px solid var(--secondary-color);
+  transition: all 330ms ease-in-out;
+  backdrop-filter: blur(10px);
+
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.option__container:hover {
+  box-shadow: 0 10px 20px #5d376f90;
+  transform: translate(0, -0.2rem);
+}

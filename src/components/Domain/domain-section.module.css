@@ -1,0 +1,22 @@
+.main__container {
+  display: grid;
+
+  margin-left: 20rem;
+  margin-top: 5rem;
+}
+
+.img__icon {
+  width: 250px;
+  height: 250px;
+}
+
+.details__section {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.domain__name {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}

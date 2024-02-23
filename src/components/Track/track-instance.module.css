@@ -1,0 +1,125 @@
+.main__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  margin: 5rem 0;
+}
+
+.details__section {
+  justify-self: flex-end;
+  border: 2px solid var(--secondary-color);
+
+  margin-right: 3rem;
+  padding: 2rem 2rem;
+
+  max-height: 26rem;
+  border-radius: 12px;
+}
+
+.img__course {
+  width: 200px;
+  height: 200px;
+}
+
+.track__stage {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.track__name {
+  font-size: 2rem;
+  color: var(--accent-color);
+}
+
+.track__desc {
+  margin-top: 0.5rem;
+  width: 80%;
+}
+
+.podium__section {
+  display: flex;
+  align-items: center;
+
+  margin-top: 1rem;
+
+  gap: 0.5rem;
+}
+
+.img__podium {
+  width: 30px;
+  height: 30px;
+}
+
+.sections {
+  display: grid;
+
+  margin-left: 4rem;
+  grid-template-columns: 300px;
+}
+
+.section__container {
+  display: flex;
+  flex-direction: column;
+
+  width: 7rem;
+  align-items: center;
+
+  justify-content: center;
+  cursor: pointer;
+}
+
+.section__container:nth-child(even) {
+  justify-self: flex-end;
+}
+
+.section__container_complete {
+  padding-bottom: 1rem;
+
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    rgba(2, 0, 36, 0) 0%,
+    rgba(155, 138, 230, 0.725) 101%
+  );
+  border-radius: 25%;
+
+  box-shadow: 0 10px 20px rgba(163, 163, 163, 0.156);
+  transition: all 220ms ease-in-out;
+}
+
+.section__container_complete:hover {
+  background: linear-gradient(
+    rgba(2, 0, 36, 0.871) 0%,
+    rgba(155, 138, 230, 0.725) 101%
+  );
+
+  transform: translateY(-0.1rem);
+}
+
+.section__container_active {
+  padding-bottom: 1rem;
+
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    rgba(212, 51, 51, 0) 0%,
+    rgba(212, 52, 51, 1) 101%
+  );
+
+  box-shadow: 0 10px 20px rgba(163, 163, 163, 0.156);
+  border-radius: 25%;
+
+  transition: all 220ms ease-in-out;
+}
+
+.section__container_active:hover {
+  background: linear-gradient(
+    rgba(212, 51, 51, 0.089) 0%,
+    rgba(212, 52, 51, 1) 101%
+  );
+
+  transform: translateY(-0.1rem);
+}
+
+.img__section_podium {
+  width: 80px;
+  height: 80px;
+}
