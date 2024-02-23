@@ -20,7 +20,7 @@ export default function () {
             Get Started
           </Link>
         </div>
-        <div className="col-6 "></div>
+        <div className="col-6 right-side"></div>
       </div>
       <div className="row icon-container">
         <div className="col-3 icon-box">
