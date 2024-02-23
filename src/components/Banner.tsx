@@ -1,11 +1,15 @@
 import science from "../public/icons/science.gif";
 import code from "../public/icons/coding.gif";
-import data from "../public/icons/Data analysis .gif";
+import data from "../public/icons/Data analysis.gif";
 import logic from "../public/icons/Logic.gif";
 import { Link } from "react-router-dom";
+import Navabar from "./navabar";
+import { inherits } from "util";
 export default function () {
   return (
     <>
+      {/* <Navabar /> */}
+
       <div className="row">
         <div className="col-6 left-side">
           <h1 className="Banner-text">
@@ -24,20 +28,40 @@ export default function () {
       </div>
       <div className="row icon-container">
         <div className="col-3 icon-box">
-          <img src={data} alt="" className="" />
-          <h5 className="mt-md-3 text">Data Analysis</h5>
+          <Link
+            to={"/computerscience"}
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            <img src={code} alt="" className="" />
+            <h5 className="mt-md-3 text">Computer Science</h5>
+          </Link>
         </div>
         <div className="col-3 icon-box">
-          <img src={logic} alt="" className="" />
-          <h5 className="mt-md-3 text">Logical Thinking</h5>
+          <Link
+            to={"/logical"}
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            <img src={logic} alt="" className="" />
+            <h5 className="mt-md-3 text">Logical Thinking</h5>
+          </Link>
         </div>
         <div className="col-3 icon-box">
-          <img src={code} alt="" className="" />
-          <h5 className="mt-md-3 text">Data Analysis</h5>
+          <Link
+            to={"/analysis"}
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            <img src={data} alt="" className="" />
+            <h5 className="mt-md-3 text">Data Analysis</h5>
+          </Link>
         </div>
         <div className="col-3 icon-box">
-          <img src={science} alt="" className="" />
-          <h5 className="mt-md-3 text">Data Analysis</h5>
+          <Link
+            to={"/scientific"}
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            <img src={science} alt="" className="" />
+            <h5 className="mt-md-3 text">Scientific Thinking</h5>
+          </Link>
         </div>
       </div>
     </>
