@@ -31,7 +31,7 @@ export default function () {
           </button>
           <div className="register-link">
             <p>
-              Don't have account?<a href="#"> Register</a>
+              Don't have account?<a href="#">  Register</a>
             </p>
           </div>
         </form>

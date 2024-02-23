@@ -209,4 +209,47 @@ width: 8rem;
   transform: perspective(800px) rotateY(180deg);
 }
 
+.navbar{
+ background-color: transparent;
+ color:var(--primary-color);
+ padding: 26px;
+ padding-left:100px;
+}
 
+
+.navbar a{
+  color: #9b8ae6;
+
+}
+
+.navbar-toggler-icon{
+font-weight: 800;
+}
+
+.login{
+    background: transparent;
+    border:1px solid #9b8ae6;
+    color: #9b8ae6;
+    padding:10px 20px;
+    border-radius:10px;
+}
+
+.login:hover{
+  background:#9b8ae6;
+  border:1px solid #060412;
+  color:#060412
+}
+
+@media (min-width:320px)  { 
+
+  .left-side {
+    padding: 50px;
+    padding-bottom: 10px;
+    padding-right: 70px;
+    height:100%;
+}
+
+.Banner-text{
+  font-size:2rem;
+}
+ }
