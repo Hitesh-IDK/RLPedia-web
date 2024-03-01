@@ -2,6 +2,7 @@ import styles from "./track-instance.module.css";
 
 import podium from "../../public/images/podium.png";
 import purpleLineClockwise from "../../public/icons/purple-line-clockwise.png";
+import { useNavigate } from "react-router-dom";
 
 export default function ({
   icon,
@@ -12,6 +13,8 @@ export default function ({
   name: string;
   stage: number;
 }): JSX.Element {
+  const navigate = useNavigate();
+
   return (
     <>
       <div className={styles.main__container}>
@@ -68,7 +71,12 @@ export default function ({
             />
             <div>Section 4</div>
           </div>
-          <div className={styles.section__container}>
+          <div
+            className={styles.section__container}
+            onClick={() => {
+              navigate("/test");
+            }}
+          >
             <img
               src={podium}
               alt="Podium"

@@ -6,12 +6,15 @@ import { Dispatch, SetStateAction, useEffect, useState } from "react";
 import emailValidator from "../../../helpers/validators/emailValidator";
 import { ValidatorResponse } from "../../../helpers/validators/types";
 import passwordValidator from "../../../helpers/validators/passwordValidator";
+import { useNavigate } from "react-router-dom";
 
 export default function ({
   setClickCounter,
 }: {
   setClickCounter: Dispatch<SetStateAction<number>>;
 }): JSX.Element {
+  const navigate = useNavigate();
+
   const [invalidFieldDetected, setInvalidFieldDetected] = useState(false);
   const [invalidMessage, setInvalidMessage] = useState("");
 
@@ -141,6 +144,8 @@ export default function ({
                     setInvalidMessage(validatedResponse.message);
                     setInvalidFieldDetected(true);
                   }
+                } else {
+                  navigate("/");
                 }
               }}
             >
